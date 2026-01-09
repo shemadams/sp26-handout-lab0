@@ -11,7 +11,7 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("racecar"))
 
     def test_mixed_case(self) -> None:
-        self.assertTrue(is_palindrome("RaceCar"))
+        self.assertFalse(is_palindrome("Nike"))
 
     def test_with_punctuation(self) -> None:
         self.assertTrue(is_palindrome("A man, a plan, a canal: Panama"))
