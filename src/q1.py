@@ -14,7 +14,7 @@ def is_palindrome(s: str) -> bool:
     Args:
         s (str): The string to check.
     Returns:
-        bool: True if the string is a palindrome, False otherwise
+        bool: True if the string is a palindrome, False otherwise..
     """
     cleaned = "".join(char.lower() for char in s if char.isalnum())
     return cleaned == cleaned[::-1]
